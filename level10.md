@@ -3,8 +3,10 @@
 - level10 is a client that read the file and send it if we have acces to it
 
 - The binary is executed as the owner of the file but check who really run it to know if we have acces to the file
-    > $ ./level10 ./token 0
-    > You don't have access to ./token
+    ```sh
+    $ ./level10 ./token 0
+    You don't have access to ./token
+    ```
 
 - We can exploit the time between the check of the right and the opening of the
     file by creating a symlink to a file we have the right to read and switching
