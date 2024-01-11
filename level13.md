@@ -1,8 +1,9 @@
 # level13
 
 - If we disassemble level13 we can see that we put the result of getuid in a var,
-    we can change this var between getuid and the if check with gdb
-    if check is at `0x0804859a`
+    we can change this var between getuid and the `if` check with gdb
+
+    `if` check is at `0x0804859a`
     ```gdb
     (gdb) b *0x0804859a
     (gdb) r
